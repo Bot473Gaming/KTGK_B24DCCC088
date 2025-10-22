@@ -9,11 +9,6 @@ interface PostCardProps {
 }
 
 const PostCard = ({ post, onDelete }: PostCardProps) => {
-    const handleDeleteClick = () => {
-        if (window.confirm("Bạn có chắc muốn xóa bài viết này?")) {
-            onDelete(post.id);
-        }
-    };
 
     return (
     <div className="post-card">
